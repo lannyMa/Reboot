@@ -125,19 +125,27 @@ __author__ = 'wenwen'
 #    print 'language is %s and count is %s' % (lang,d[lang])
 
 #homework
+# nb way
 arr=[1,2,3,2,12,3,1,3,21,2,2,3,4111,22,3333,444,111,4,5,777,65555,45,33,45]
 max_num=arr[0]
-index=0
-#max_index=0
 sec_num=0
-#sec_index=0
 for num in arr:
     if num>max_num:
+        sec_num=max_num
         max_num=num
-#       max_index=index
-#        print 'max='+str(max_num)
-for num1 in arr:
-        if num1>sec_num and num1!=max_num:
-            sec_num=num1
+    elif max_num>num and num>sec_num:
+        sec_num=num
 print 'max='+str(max_num)
 print 'sec='+str(sec_num)
+# my way
+#arr=[1,2,3,2,12,3,1,3,21,2,2,3,4111,22,3333,444,111,4,5,777,65555,45,5555,45]
+#max_num=arr[0]
+#sec_num=0
+#for num in arr:
+#    if num>max_num:
+#        max_num=num
+#for num1 in arr:
+#        if num1>sec_num and num1!=max_num:
+#            sec_num=num1
+#print 'max='+str(max_num)
+#print 'sec='+str(sec_num)
