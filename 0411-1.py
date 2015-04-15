@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 __author__ = 'wenwen'
 #for name in ['wenwen','wd','pc']:
 #    print name
