@@ -35,7 +35,19 @@ arr=[1,2,3,4,2,12,3,14,3,21,2,2,3,4111,22,3333,4]
 #print init_min
 
 ###The realization of append function
-init_count=len(demo_list)
-demo_list[init_count:]=['x']
-print demo_list
+#init_count=len(demo_list)
+#demo_list[init_count:]=['x']
+#print demo_list
+
+###sort
+# count=0
+# while count<len(arr):
+#     init_index=0
+#     for i in range(0,len(arr)-1):
+#         if arr[i]>arr[i+1]:
+#             arr[i],arr[i+1]=arr[i+1],arr[i]
+#     count=count+1
+# print arr
+
+
 
