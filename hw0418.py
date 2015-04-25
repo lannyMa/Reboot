@@ -131,20 +131,38 @@ arr_list2=[2,1,3,2,43,234,454,452,234,14,21,14]
 
 
 ###HomeWork####
-arr_list=[5000,4333,3,4,888,12,3,14,3,21,2,2,3,4111,22,3333,4]
-init_count=len(arr_list)
-for i in range(0,init_count):
-    init_index=i
-#choose min
-    for j in range(i+1,init_count):
-        if arr_list[init_index]>arr_list[j]:
-            init_index=j
-#            print 'init_index='+str(init_index)
-#            print arr_list
-    temp=arr_list[i]
-    arr_list[i]=arr_list[init_index]
-    arr_list[init_index]=temp
-#    print i
-#    print arr_list
+# arr_list=[5000,4333,3,4,888,12,3,14,3,21,2,2,3,4111,22,3333,4]
+# init_count=len(arr_list)
+# for i in range(0,init_count):
+#     init_index=i
+# #choose min
+#     for j in range(i+1,init_count):
+#         if arr_list[init_index]>arr_list[j]:
+#             init_index=j
+# #            print 'init_index='+str(init_index)
+# #            print arr_list
+#     temp=arr_list[i]
+#     arr_list[i]=arr_list[init_index]
+#     arr_list[init_index]=temp
+# #    print i
+# #    print arr_list
+#
+# print(arr_list)
 
-print(arr_list)
+##zhangchen
+l2 = [1,2,3,2,12,3,1,3,21,2,2,3,4111,22,3333,444,111,4,5,777,65555,45,33,45]
+l1 = l2[0]
+
+
+for i in l2:
+    for l in range(1,len(l1)):
+        if i <= l1[l]:
+            l1.insert(l,i)
+            print l1
+            print '*'*10
+            break
+
+        elif i > l1[len(l1)-1]:
+            l1.append(i)
+print l1
+print l2
