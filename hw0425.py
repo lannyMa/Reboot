@@ -10,15 +10,24 @@ read_me.replace('：',':')
 
 str_list=list(read_me)
 str_dict={}
-new_dict={}
+ten_max=[]
 
 for char in str_list:
     if char not in str_dict:
         str_dict[char]=str_list.count(char)
-count_list=str_dict.values()
-count_list.sort(reverse=True)
-for k,v in str_dict.items():
-    for i in range(0,10):
-        if count_list[i]==v:
-            new_dict[k]=v
-print new_dict
+###way 1
+# count_list=str_dict.values()
+# count_list.sort(reverse=True)
+# for k,v in str_dict.items():
+#     for i in range(0,10):
+#         if count_list[i]==v:
+#             new_dict[k]=v
+###way2
+temp_list=str_dict.items()
+print temp_list
+for i in range(1,11):
+    for j in range(0,len(temp_list)-1):
+        if temp_list[j][1]>temp_list[j+1][1]:
+            temp_list[j],temp_list[j+1]=temp_list[j+1],temp_list[j]
+#            ten_max[i]=temp_list[j][0]
+    print(temp_list[-i][0])
