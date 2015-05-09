@@ -10,13 +10,6 @@ str_dict={}
 for char in str_list:
     if char not in str_dict:
         str_dict[char]=str_list.count(char)
-temp_list=str_dict.items()
-for i in range(0,len(temp_list)):
-    for j in range(0,len(temp_list)-1):
-        if temp_list[j][1]>temp_list[j+1][1]:
-            temp_list[j],temp_list[j+1]=temp_list[j+1],temp_list[j]
-for index in range(1,11):
-    print(temp_list[-index])
 ###way 1
 # count_list=str_dict.values()
 # count_list.sort(reverse=True)
