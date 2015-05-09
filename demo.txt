@@ -1,0 +1,14 @@
+name
+wd
+name
+wd
+No.1 is   , and count is 251
+No.2 is e , and count is 131
+No.3 is t , and count is 103
+No.4 is o , and count is 96
+No.5 is i , and count is 86
+No.6 is n , and count is 77
+No.7 is a , and count is 77
+No.8 is h , and count is 66
+No.9 is s , and count is 58
+No.10 is r , and count is 55
