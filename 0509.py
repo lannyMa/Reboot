@@ -15,7 +15,7 @@ for i in range(0,len(temp_list)):
             temp_list[j],temp_list[j+1]=temp_list[j+1],temp_list[j]
 f=open('demo.txt','a')
 for index in range(1,11):
-    string='No.'+str(index)+' is '+temp_list[-index][0]+' , and count is '+str(temp_list[-index][1])+'\n'
+    string='No.%s is %s , and count is %s\n' % (index,temp_list[-index][0],str(temp_list[-index][1]))
     f.write(string)
 f.close()
 
