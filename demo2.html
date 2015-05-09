@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>title</title>
+  <style>
+    #contentDiv{
+      background: #eee;
+      width: 400px;
+      height: 400px;
+    }
+    #contentstr{
+          color:red;
+    }
+  </style>
+</head>
+<body>
+  <input type="text" id='inputText'>
+  <input type="button" id='inputBtn' value='发送'>
+  <div id="contentDiv">
+  </div>
+
+<script src="http://lib.sinaapp.com/js/jquery/1.9.1/jquery-1.9.1.min.js"></script>
+<script>
+  // id: $('#id')
+  // class: $('.class')
+  // $('#id').html() 返回元素的内容
+  // $('#id').html('aaa<br><input type="text">') 修改元素的内容
+  // $('#id').css('属性名','值')
+  // 输入框：
+  // $('#id').val() 返回输入的值
+  // $('#id').val('你好') 修改输入的值
+
+
+  // 点击事件：
+  //   $('#id').on('事件',事件发生触发的函数)
+
+  //   $('#id').on('click',function(){
+  //     alert('123')
+  //   })
+    $('#inputBtn').on('click',function(){
+        str=$('#inputText').val()
+        if(str!='') {
+            str_content=$('#contentDiv').html()
+            str_tmp=''
+//            alert(str_content)
+            if(str_content!='') {
+                str_tmp='<br>'
+            }
+//            alert(str_content)
+
+
+                $('#contentDiv').html(str + str_tmp + str_content)
+                $('#inputText').val('')
+        }else{
+            alert('please input something')
+        }
+
+    })
+
+
+
+
+
+</script>
+</body>
+
+</html>

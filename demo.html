@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>title</title>
+  <style>
+  	.content{
+  		background:yellow;
+  		margin-bottom:20px;
+  		/*margin:2px;*/
+  	}
+  	#firstDiv{
+  		color:#00FFF6;
+  	}
+  	#secondDiv{
+  		color:black;
+  	}
+  </style>
+</head>
+
+<body>
+  <h1>你好</h1>
+  <p>
+  	大家好
+  </p>
+  <p>
+  	下午好
+  </p>
+  <hr>
+  <input type="reset">
+  <div class='content' id='firstDiv'>
+  	我是第一个div
+  </div>
+  <div class='content' id='secondDiv'>
+  	我是第二个div
+  </div>
+  <span class='content'>
+  	我是一个span
+  </span>
+  <script src="http://lib.sinaapp.com/js/jquery/1.9.1/jquery-1.9.1.min.js"></script>
+  <script>
+  	$('#firstDiv').html('你好')
+    $('#secondDiv').css('background','red')
+    /*$('#secondDiv').click()*/
+  </script>
+</body>
+
+</html>

@@ -29,3 +29,5 @@ print 'highest is %s' % tem_max
 print 'avg is %s' % tem_avg
 
 
+
+
