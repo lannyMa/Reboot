@@ -20,5 +20,9 @@ for (k,v) in log_dict.items():
     log_list.append(k[0])
     log_list.append(k[1])
     log_list.append((k[2],v))
-    print log_list
+    tmp_file=open('log_analysis.txt','a')
+    # tmp_file.write(str(log_file))
+    tmp_file.write(str(log_list)+'\n')
+    tmp_file.close()
+    # print log_list
 log_file.close()
