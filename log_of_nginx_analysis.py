@@ -27,6 +27,11 @@ for line in log_file.readlines():
 #     print log_list
 
 tmp_list1=log_dict.items()
+for i in range(10):
+    for j in range(len(tmp_list1)-1):
+        if tmp_list1[j][1]>tmp_list1[j+1][1]:
+            tmp_list1[j],tmp_list1[j+1]=tmp_list1[j+1],tmp_list1[j]
+print tmp_list1[-11:-1]
 ip_dict={}
 url_dict={}
 for (k,v) in tmp_list1:
