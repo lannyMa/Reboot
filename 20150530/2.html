@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>MyjQuery</title>
+</head>
+<body>
+	<button id='clickBtn'>
+		clickMe
+	</button>
+	<p id='content'>
+		kkkkkkkkkk
+	</p>
+	<input type="text" id="inputText">
+
+	<script src="http://lib.sinaapp.com/js/jquery/1.9.1/jquery-1.9.1.min.js"></script>
+	<script type="text/javascript">
+		var isShow=true
+		$('#clickBtn').on('click',function(){
+			console.log($('#inpurtText').val())
+		})
+			
+			// $('#clickBtn').on('click',function(){
+			// 	if (isShow) {
+			// 		c=$('#content').html()
+			// 		console.log(c)
+			// 		isShow=false;
+			// 	}else{
+			// 		$('#content').html('123')
+					
+			// 		isShow=true;
+			// 	}
+			// })
+		
+		
+	</script>
+</body>
+</html>
